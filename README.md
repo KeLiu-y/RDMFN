@@ -1,5 +1,7 @@
 <div align="center">
-  <img src="GR-DC.png" width="450"/>
+  <img src="RDMFNet.png" width="800"/> 
+  <div>&nbsp;</div>
+  <img src="GR-DC.png" width="800"/>
   <div>&nbsp;</div>
 
 [![license](https://img.shields.io/github/license/open-mmlab/mmrotate.svg)](LICENSE)
