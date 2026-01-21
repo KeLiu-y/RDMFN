@@ -20,9 +20,9 @@
 
 ## 📝 Introduction
 
-**RDMFN** (Rotation-Aware Dual-Branch Mamba Fusion Network) is an efficient backbone network architecture specifically designed for **Oriented Object Detection** in military remote sensing images.
+**RAPTOR** (Rotation-Aware Dual-Branch Mamba Fusion Network) is an efficient backbone network architecture specifically designed for **Oriented Object Detection** in military remote sensing images.
 
-Addressing the challenges of extreme geometric variability, ambiguous context, and feature degradation in military remote sensing, RDMFN proposes a dual-branch architecture that decouples local geometric modeling from global context aggregation. It significantly improves detection accuracy for rotating objects in complex environments while maintaining linear computational complexity.
+Addressing the challenges of extreme geometric variability, ambiguous context, and feature degradation in military remote sensing, RAPTOR proposes a dual-branch architecture that decouples local geometric modeling from global context aggregation. It significantly improves detection accuracy for rotating objects in complex environments while maintaining linear computational complexity.
 
 ### 🌟 Key Highlights
 * **Parallel Local-Global Fusion Block (PLGFB)**: Collaborates two specialized branches for feature extraction. The **GR-DC** (Grouped Rotation-Deformable Convolution) branch dynamically predicts rotation angles to adapt to object contours, while the **RVMB** branch utilizes the linear complexity of Vision Mamba to capture global context.
@@ -34,7 +34,7 @@ Addressing the challenges of extreme geometric variability, ambiguous context, a
 
 ## 🚀 Performance at a Glance
 
-Comparison of RDMFN with current state-of-the-art (SOTA) methods on the **Military-RSOD** dataset:
+Comparison of RAPTOR with current state-of-the-art (SOTA) methods on the **Military-RSOD** dataset:
 
 | Stage | Method | Backbone | FLOPs (G) | mAP (%) |
 | :--- | :--- | :--- | :---: | :---: |
@@ -78,8 +78,6 @@ This project is built based on [MMRotate 0.3.4](https://github.com/open-mmlab/mm
 
 1. **Environment Preparation**:
 ```shell
-conda create -n rdmfn python=3.8 -y
-conda activate rdmfn
 # Recommended installation version
 conda create -n openmmlab python=3.7 pytorch==1.7.0 cudatoolkit=10.1 torchvision -c pytorch -y
 conda activate openmmlab
