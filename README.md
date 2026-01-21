@@ -1,5 +1,5 @@
 <div align="center">
-  <font size="10" color="red">
+  <font size="20" color="red">
     <strong>Code and datasets will be released upon acceptance of the paper.</strong>
   </font>
 </div>
